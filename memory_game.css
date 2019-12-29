@@ -1,0 +1,43 @@
+h1 {
+  text-align: center;
+}
+.container {
+  width: 100vw;
+  height: 100hw;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+.row > div {
+  border: solid black 1px;
+  /* flex-grow: ; */
+  list-style: none;
+  height: 170px;
+  width: 140px;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (min-whidth: 496px) {
+}
+.my_button {
+  display: none;
+}
+
+.disable-pick-card {
+  pointer-events: none;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.match {
+  border: solid 2px limegreen;
+}
+
+.unmatch {
+  border: solid 3px red;
+}
