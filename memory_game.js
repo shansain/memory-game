@@ -1,25 +1,25 @@
 //my cod for my Memory  Game
 let images = [
-  "./img./ca1.jpg",
-  "./img./ca2.jpg",
-  "./img./ca3.jpg",
-  "./img./ca4.jpg",
-  "./img./ca5.jpg",
-  "./img./ca6.jpg",
-  "./img./ca7.jpg",
-  "./img./ca8.jpg",
-  "./img./ca9.jpg",
-  "./img./ca10.jpg",
-  "./img./ca1.jpg",
-  "./img./ca2.jpg",
-  "./img./ca3.jpg",
-  "./img./ca4.jpg",
-  "./img./ca5.jpg",
-  "./img./ca6.jpg",
-  "./img./ca7.jpg",
-  "./img./ca8.jpg",
-  "./img./ca9.jpg",
-  "./img./ca10.jpg"
+  "./img/ca1.jpg",
+  "./img/ca2.jpg",
+  "./img/ca3.jpg",
+  "./img/ca4.jpg",
+  "./img/ca5.jpg",
+  "./img/ca6.jpg",
+  "./img/ca7.jpg",
+  "./img/ca8.jpg",
+  "./img/ca9.jpg",
+  "./img/ca10.jpg",
+  "./img/ca1.jpg",
+  "./img/ca2.jpg",
+  "./img/ca3.jpg",
+  "./img/ca4.jpg",
+  "./img/ca5.jpg",
+  "./img/ca6.jpg",
+  "./img/ca7.jpg",
+  "./img/ca8.jpg",
+  "./img/ca9.jpg",
+  "./img/ca10.jpg"
 ];
 
 let card = document.getElementsByClassName("card");
@@ -39,7 +39,7 @@ function shuffle() {
   }
 }
 
-//here my cod cate the card in wepe page, 4 rows and 5 cards in a row also it's crate event lisiner
+//here my cod cate the card in the page, 4 rows and 5 cards in a row also it's crate event lisiner
 function initCards() {
   let imageIndex = 0;
   for (let i = 0; i < 4; i++) {
@@ -59,7 +59,7 @@ function initCards() {
       const elementCardCover = document.createElement("div");
       elementCardCover.id = `card-cover-${i}-${j}`;
       elementCardCover.className = `hide`;
-      elementCardCover.style.backgroundImage = `url(${"./img./background.jpg"})`;
+      elementCardCover.style.backgroundImage = `url(${"./img/background.jpg"})`;
       elementCardCover.style.width = "100%";
       elementCardCover.style.height = "100%";
       elementCardCover.addEventListener("click", function() {
@@ -92,7 +92,7 @@ function hidePickedCards() {
   }
 }
 
-//here the cod chek  how many card you pick and if there is match
+//here the cod check how many card you pick and if there is match
 function pickCard(element) {
   stepsCounter++;
 
@@ -128,7 +128,7 @@ function pickCard(element) {
       } else {
         enableClick();
       }
-    }, 3000);
+    }, 1000);
   }
 }
 
